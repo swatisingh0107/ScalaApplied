@@ -15,7 +15,7 @@ $ touch Dockerfile
 ```
 docker build -t scalabuild:1.0 .
 ```   
-![](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerBuild.JPG "Build Image")
+![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerBuild.png "Build Image")
 
 4. ```docker images``` lists the images running in the docker environment.  
-![](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerImages.JPG "List Image")
+![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerImages.png "List Image")
