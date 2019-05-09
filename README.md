@@ -14,4 +14,8 @@ $ touch Dockerfile
 3. Build dockerfile to create image. A Dockerfile is a script that contains collections of commands and instructions that will be automatically executed in sequence in the docker environment for building a new docker image.
 ```
 docker build -t scalabuild:1.0 .
-```
+```   
+![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerBuild.JPG "Build Image")
+
+4. ```docker images``` lists the images running in the docker environment.  
+![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerImages.JPG "List Image")
