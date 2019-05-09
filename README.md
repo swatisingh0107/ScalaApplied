@@ -1,1 +1,0 @@
-#Stairway to Scala Applied
