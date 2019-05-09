@@ -8,3 +8,10 @@ $ pwd
 $ touch Dockerfile
 #Dockerfile contains the image installation for Scala-SBT-JDK
 ```
+2. Add the dockerfile without an extension into the working directory
+[Dockerfile](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Dockerfile)
+
+3. Build dockerfile to create image. A Dockerfile is a script that contains collections of commands and instructions that will be automatically executed in sequence in the docker environment for building a new docker image.
+```
+docker build -t scalabuild:1.0 .
+```
