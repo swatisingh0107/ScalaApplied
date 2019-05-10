@@ -34,6 +34,6 @@ We will integrate IntelliJ with Docker to fetch the configuration from the Docke
 ### Test setup
 We will now run a test module to check that the correct version of scala and sbt are configured into our project. For this download and unzip the [test project](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/tree/master/TestSetup) provided in the tutorial. Open this project in IntelliJ.
 1. Deploy build configuration from Dockerfile   
-![alt text][/Images/AddDockerBuildConfig.gif]
+![alt text](/Images/AddDockerBuildConfig.gif)
 2. Run build config
-![alt text][/Images/RunBuildConfig.gif]
+![alt text](/Images/RunBuildConfig.gif)
