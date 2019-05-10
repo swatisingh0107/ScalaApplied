@@ -1,6 +1,8 @@
 # Setup Scala Environment
 The video demonstration follows the steps to install Scala, SBT and JDK in the development environment. It also covers the steps to install and setup a suitable IntelliJ IDE. I have tweaked the steps to containarize the development environement. Steps are mentioned as below:
 
+## Setup Dockerfile with build configuration
+
 1. Run Git bash    
 ```   
 $ pwd  
@@ -15,7 +17,22 @@ $ touch Dockerfile
 ```
 docker build -t scalabuild:1.0 .
 ```   
-![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerBuild.png "Build Image")
+![alt text](/master/Images/DockerBuild.png "Build Image")
 
 4. ```docker images``` lists the images running in the docker environment.  
-![alt text](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/blob/master/Images/DockerImages.png "List Image")
+![alt text](/Images/DockerImages.png "Image List")
+
+## Setup IntelliJ with Development Environment
+We will integrate IntelliJ with Docker to fetch the configuration from the Dockerfile.
+
+1. Goto Files->Setting->Plugins0->Docker Integration->install
+2. Docker should now be available under File->Settings->Build,Execution,Deployment
+3. Add the docker machine and map the path to the working directory. Test the connection.    
+![alt text](/Images/MapDockerMachine.png "Map Docker Machine")  
+
+### Test setup
+We will now run a test module to check that the correct version of scala and sbt are configured into our project. For this download and unzip the [test project](https://gitlab.com/rohit104/summer2019_swati_scalasparkpythonkafka/tree/master/TestSetup) provided in the tutorial. Open this project in IntelliJ.
+1. Deploy build configuration from Dockerfile   
+![alt text][/Images/AddDockerBuildConfig.gif]
+2. Run build config
+![alt text][/Images/RunBuildConfig.gif] 
