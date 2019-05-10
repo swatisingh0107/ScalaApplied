@@ -20,6 +20,7 @@ docker build -t scalabuild:1.0 .
 ![alt text](/master/Images/DockerBuild.png "Build Image")
 
 4. ```docker images``` lists the images running in the docker environment.  
+<<<<<<< HEAD
 ![alt text](/Images/DockerImages.png "Image List")
 
 ## Setup IntelliJ with Development Environment
@@ -35,4 +36,4 @@ We will now run a test module to check that the correct version of scala and sbt
 1. Deploy build configuration from Dockerfile   
 ![alt text][/Images/AddDockerBuildConfig.gif]
 2. Run build config
-![alt text][/Images/RunBuildConfig.gif] 
+![alt text][/Images/RunBuildConfig.gif]
