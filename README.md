@@ -41,8 +41,36 @@ We will now run a test module to check that the correct version of scala and sbt
 
 #### The Scala REPL
 **Basics of Scala REPL**  
-Difference between val and var  
-| val | Var|  
-| --- | --- |  
-Val is immutable i.e readonly| Var is mutable i.e. read-write  
-| Var have to be initialized at the time of declaration    
+Difference between val and var    
+
+| Val        | Var           |  
+| ---|---|     
+|Val is immutable i.e readonly | Var is mutable i.e. read-write  
+|| Var have to be initialized at the time of declaration |
+
+![alt text](/Images/ScalaREPL.JPG)  
+![alt text](/Images/ValVar.JPG)   
+
+**Scoping in Val**  
+```
+scala>:paste  
+// Entering paste mode (ctrl-D to finish)
+
+val x=10  
+println(x)  
+
+{  
+  val x=20  
+  println(x)  
+}
+
+println(x)
+
+//Ctrl+D  
+// Exiting paste mode, now interpreting.
+
+10  
+20  
+10  
+x: Int=10    
+```
