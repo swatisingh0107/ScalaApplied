@@ -17,7 +17,7 @@ $ touch Dockerfile
 ```
 docker build -t scalabuild:1.0 .
 ```   
-![alt text](/master/Images/DockerBuild.png "Build Image")
+![alt text](/Images/DockerBuild.png "Build Image")
 
 4. ```docker images``` lists the images running in the docker environment.  
 ![alt text](/Images/DockerImages.png "Image List")
@@ -39,38 +39,5 @@ We will now run a test module to check that the correct version of scala and sbt
 **The environment variables are now set**  
 ![alt text](/Images/EnvVar.JPG)
 
-#### The Scala REPL
-**Basics of Scala REPL**  
-Difference between val and var    
-
-| Val        | Var           |  
-| ---|---|     
-|Val is immutable i.e readonly | Var is mutable i.e. read-write  
-|| Var have to be initialized at the time of declaration |
-
-![alt text](/Images/ScalaREPL.JPG)  
-![alt text](/Images/ValVar.JPG)   
-
-**Scoping in Val**  
-```
-scala>:paste  
-// Entering paste mode (ctrl-D to finish)
-
-val x=10  
-println(x)  
-
-{  
-  val x=20  
-  println(x)  
-}
-
-println(x)
-
-//Ctrl+D  
-// Exiting paste mode, now interpreting.
-
-10  
-20  
-10  
-x: Int=10    
-```
+# Exercises
+1. [Scala Applied Module 1](/Module1/ScalaModule1Code.md)
