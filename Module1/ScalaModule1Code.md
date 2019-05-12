@@ -165,3 +165,38 @@ scala fileName.sc
 scala
 >load fileName.sc
 ```
+## Exercises
+1. Create a Scala script file called timestable.sc in your working directory (make a directory if you need to). Write two while loops from 1 to 5, one inside the other. Call one loop variable x and the other y. println a message in the inner loop that says s"$x times $y is ${x * y}.   
+Remember to increment both x and y in their respective loops. Either run your script using scala timestable.sc or sbt console then :load timestable.sc to check that it works. You should get 25 lines of output.
+```
+var x=0
+var y=0
+while (x<5){
+  y=0
+  while(y<5){
+    println(s"$x times $y is ${x * y}")
+    y += 1
+  }
+  x += 1
+}
+```
+![alt text](/Images/Exercises/Exercise1.JPG)  
+
+2. Extra credit: Alter your previous timestable.sc to only print out lines if the result of the multiplication contains either a '4' or a '6' digit in the number produced.
+
+```
+var x=0
+var y=0
+while (x<5){
+  y=0
+  while(y<5){
+    var times = x*y
+    if (times.toString.contains('4') || times.toString.contains('6'))
+      println(s"$x times $y is $times")
+    y += 1
+  }
+  x += 1
+}
+
+```
+![alt text](/Images/Exercises/Module1ExtraCredit.JPG) 
