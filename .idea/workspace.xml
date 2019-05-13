@@ -7,9 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bf61aca-d6d5-4b68-9e64-84dcc33d5ff8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module1/timetable.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/.idea/modules/exercises-applied_9693-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/.idea/modules/exercises-applied_9693.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/summer2019_swati_scalasparkpythonkafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/summer2019_swati_scalasparkpythonkafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/ScalaModule1Code.md" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/ScalaModule1Code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +31,8 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Module1/timetable.sc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/module01/scripts/01-Intro-to-Scala.sc">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -78,8 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,13 +98,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557639565306" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557683259406" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8 (2)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TestSetup/Flight01/Flight01" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Code/exercises-applied-part1" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Docker" />
@@ -129,10 +133,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScalaBuild" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="command" value="" />
+          <option name="containerName" value="ScalBuild" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="scalabuild:1.0" />
+          <option name="commandLineOptions" value="" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ScalaTutorial" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="ScalaEnv" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
           <option name="command" value="" />
           <option name="containerName" value="" />
           <option name="entrypoint" value="" />
@@ -148,8 +169,14 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Docker.ScalaEnv" />
+      <item itemvalue="Docker.ScalaBuild" />
+      <item itemvalue="Scala Console.Scala Console" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.ScalaBuild" />
         <item itemvalue="Scala Console.Scala Console" />
       </list>
     </recent_temporary>
@@ -207,9 +234,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.26153848" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.27125505" />
       <window_info id="Structure" order="1" sideWeight="0.5012346" side_tool="true" weight="0.2534413" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -222,8 +248,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
-      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.4979757" weight="0.35689655" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3275862" />
+      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.4979757" weight="0.53965515" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4979757" weight="0.3413793" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020243" side_tool="true" weight="0.6" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4979757" weight="0.3275862" />
@@ -348,10 +374,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module1/timetable.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/exercises-applied-part1/exercises-applied/module01/scripts/01-Intro-to-Scala.sc">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -364,7 +393,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -384,6 +412,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>scala-sdk-2.12.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
