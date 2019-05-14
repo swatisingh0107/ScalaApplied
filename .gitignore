@@ -2,3 +2,6 @@ target/
 target/*
 module*/target
 */target
+
+.idea
+
