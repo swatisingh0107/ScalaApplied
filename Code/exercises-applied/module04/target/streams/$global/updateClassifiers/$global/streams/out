@@ -873,43 +873,19 @@
 [debug] == resolving dependencies module04#module04$sources;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.4 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scalacheck#scalacheck_2.12;1.13.4!scalacheck_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scalamock#scalamock_2.12;4.1.0!scalamock_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(src)
-[debug] 		tried C:\Users\swati\.ivy2\local\org.scalacheck\scalacheck_2.12\1.13.4\srcs\scalacheck_2.12-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.12/1.13.4/scalacheck_2.12-1.13.4-sources.jar
-[debug] 		tried C:\Users\swati\.ivy2\local\org.scalatest\scalatest_2.12\3.0.4\srcs\scalatest_2.12-sources.jar
-[debug] 		tried C:\Users\swati\.ivy2\local\org.scalactic\scalactic_2.12\3.0.4\srcs\scalactic_2.12-sources.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
-[debug] 		tried C:\Users\swati\.ivy2\local\org.scalamock\scalamock_2.12\4.1.0\srcs\scalamock_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.4/scalatest_2.12-3.0.4-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalamock/scalamock_2.12/4.1.0/scalamock_2.12-4.1.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalamock/scalamock_2.12/4.1.0/scalamock_2.12-4.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalamock/scalamock_2.12/4.1.0/scalamock_2.12-4.1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.4/scalatest_2.12-3.0.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.4/scalatest_2.12-3.0.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.12/1.13.4/scalacheck_2.12-1.13.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.12/1.13.4/scalacheck_2.12-1.13.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalamock/scalamock_2.12/4.1.0/scalamock_2.12-4.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.12/1.13.4/scalacheck_2.12-1.13.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalamock/scalamock_2.12/4.1.0/scalamock_2.12-4.1.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.12/1.13.4/scalacheck_2.12-1.13.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.4/scalactic_2.12-3.0.4-sources.jar
-[info] 	[SUCCESSFUL ] org.scalacheck#scalacheck_2.12;1.13.4!scalacheck_2.12.jar(src) (13699ms)
-[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(src) (13689ms)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar(src)
-[info] 	[SUCCESSFUL ] org.scalamock#scalamock_2.12;4.1.0!scalamock_2.12.jar(src) (13710ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.4/scalatest_2.12-3.0.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.4/scalatest_2.12-3.0.4-sources.jar
-[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(src) (14559ms)
-[debug] :: resolution report :: resolve 484ms :: artifacts dl 14602ms
+[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
+[debug] :: resolution report :: resolve 199ms :: artifacts dl 12ms
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT compile produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-compile.xml
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT runtime produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-runtime.xml
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT test produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-test.xml
@@ -921,4 +897,4 @@
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT plugin produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-plugin.xml
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT pom produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-pom.xml
 [debug] 	report for module04#module04$sources;1.0-SNAPSHOT scala-tool produced in C:\Users\swati\Box Sync\Independent Study\SpecialTopics\summer2019_swati_scalasparkpythonkafka\Code\exercises-applied\module04\target\scala-2.12\resolution-cache\reports\module04-module04$sources-scala-tool.xml
-[debug] 	resolve done (484ms resolve - 14602ms download)
+[debug] 	resolve done (199ms resolve - 12ms download)

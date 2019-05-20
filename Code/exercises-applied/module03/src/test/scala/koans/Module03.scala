@@ -30,14 +30,44 @@ class Module03 extends KoanSuite with Matchers with SeveredStackTraces {
   // are far from exhaustive
 
   // UNCOMMENT BELOW
-  /* test ("Create a new Complex number and check the values for the real/imaginary parts") {
+  //test ("Create a new complex number with double values and check those values")
+  class ComplexNum(r: Double, i: Double){
+    val real:Double=r
+    val imaginary:Double=i
+
+//test ("Create a complex number from a real number, imaginary part should be 0")
+    def this(r:Double)=this(r,0.0)
+
+//test ("Complex number should be printed in the form R.R + I.Ii")
+    //override def toString: String = s"$r + $i"+"i"
+//Extra credit: test ("Format for negative imaginary part should be R.R - I.Ii")
+    override def toString: String = if (i>0.0)s"$r + $i"+"i" else
+    s"$r - "+ math.abs(i)+"i"
+
+
+    def +(other:ComplexNum): ComplexNum =
+    new ComplexNum(
+      this.real+other.real,
+      this.imaginary + other.imaginary
+    )
+  }
+  //test ("Add a complex to a double")
+  object ComplexNum {
+    def apply(r: Double, i: Double): ComplexNum =
+      new ComplexNum(r, i)
+
+    implicit def apply(r: Double): ComplexNum =
+      new ComplexNum(r, 0.0)
+  }
+
+  test ("Create a new Complex number and check the values for the real/imaginary parts") {
     val complex = new ComplexNum(4, 2)
 
     complex.real should be (4)
     complex.imaginary should be (2)
   }
 
-  test ("Create a new complex number with double values and check those values") {
+ test ("Create a new complex number with double values and check those values") {
     val complex = new ComplexNum(6.2, -1.5)
 
     complex.real should be (6.2)
@@ -73,7 +103,7 @@ class Module03 extends KoanSuite with Matchers with SeveredStackTraces {
 
     complex.real should be (12)
     complex.imaginary should be (3.2)
-  } */
+  }
 
   // Extra credit - numbers with a negative imaginary part should be output
   // as 6.0 - 5.0i instead of 6.0 + -5.0i - if you have time, write a new test
@@ -81,25 +111,25 @@ class Module03 extends KoanSuite with Matchers with SeveredStackTraces {
   // Hint: scala.math.abs will give the absolute value of a double
 
   // UNCOMMENT BELOW
-  /* test ("Format for negative imaginary part should be R.R - I.Ii") {
+   test ("Format for negative imaginary part should be R.R - I.Ii") {
     val complex = new ComplexNum(5, -6)
     val complex2 = new ComplexNum(5.5, -6.6)
 
     complex.toString should be ("5.0 - 6.0i")
     complex2.toString should be ("5.5 - 6.6i")
-  } */
+  }
 
   // Extra extra credit - adding a double to a complex works, but adding a complex
   // to a double does not. If you add an implicit conversion you can make this work
   // if you have time, write a test, and add an implicit to make it work
 
   // UNCOMMENT BELOW
-  /* test ("Add a complex to a double") {
+   test ("Add a complex to a double") {
     val complex = 5.6 + new ComplexNum(3.4, 4.5)
 
     complex.real should be (9)
     complex.imaginary should be (4.5)
-  } */
+  }
 
 
   // Extra, extra, extra credit, add a companion object and factory methods,
