@@ -1,6 +1,6 @@
 target/
 target/*
-module*/target
+Code/exercises-applied/module*/target/
 */target
 
 .idea
